@@ -50,36 +50,6 @@ The system is implemented as a **wearable neckband** for cattle and is suitable 
 
 ---
 
-## 📂 Project Directory Structure
-smart-livestock-health-monitoring/
-│
-├── src/
-│ ├── main.py # System controller
-│ │
-│ ├── sensors/
-│ │ ├── dht11_sensor.py # Temperature sensor interface
-│ │ ├── max30102_sensor.py # Heart rate sensor interface
-│ │ ├── mpu6050_sensor.py # Accelerometer & gyroscope interface
-│ │ └── init.py
-│ │
-│ ├── utils/
-│ │ ├── signal_processing.py # Classification & threshold logic
-│ │ └── init.py
-│ │
-│ ├── alerts/
-│ │ ├── twilio_alert.py # SMS alert module
-│ │ └── init.py
-│
-├── docs/
-│ └── Smart_Livestock_Health_Monitoring_System.pdf
-│
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── .gitignore
-
-
----
-
 ## 🛠️ Hardware Requirements
 
 - Raspberry Pi 4B  
@@ -117,7 +87,8 @@ Main libraries used:
 
 ---
 
-⚙️ System Setup
+##**⚙️ System Setup**
+
 1️⃣ Enable I2C on Raspberry Pi
 sudo raspi-config
 → Interface Options → I2C → Enable
@@ -139,7 +110,7 @@ Once running, the system will:
 
 ---
 
-🚨 Alert Logic
+##**🚨 Alert Logic**
 
 An SMS alert is triggered when:
   Body temperature exceeds normal threshold
@@ -153,8 +124,30 @@ Alerts include:
 
 ---
 
-📄 Conference Publication
+##**📄 Conference Publication**
 
 This project has been presented in the **International Conference on Computing, Communication and Sustainable Energy Technolgies** organised by Department of Electronics and Communication Engineering By Galgotias College of Engineering on the title
 
 **“IoT Enabled Smart Livestock Health Monitoring System”**
+
+##**📊 Applications**
+  -Smart agriculture
+  -Precision livestock farming
+  -Early disease detection
+  -Remote cattle monitoring
+  -Farm productivity optimization
+
+##**🔮 Future Enhancements**
+  -Machine learning–based disease prediction
+  -Cloud dashboard for analytics
+  -GPS-based cattle tracking
+  -Multi-animal scalability
+  -Additional health sensors (respiration, hydration)
+## **👩‍💻 Author**
+
+Priyadharshini V
+
+##**📜 License**
+
+This project is released under the MIT License.
+Free to use for academic and research purposes with proper citation
